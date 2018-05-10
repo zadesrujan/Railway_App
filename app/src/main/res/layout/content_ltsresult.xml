@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lts"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.major_project.Ltsresult"
+    tools:showIn="@layout/activity_ltsresult">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Live Train Status"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="162dp"
+    android:id="@+id/cv"
+    android:layout_marginTop="122dp"
+    app:cardBackgroundColor="#ef7272"
+    android:elevation="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#ffff"
+    android:id="@+id/tnu"
+    android:layout_marginLeft="10dp"
+    android:textSize="16dp"
+    android:textStyle="bold"
+    android:layout_marginTop="5dp"
+    android:text="Train Number :"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Train Name :"
+        android:textColor="#ffff"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tna"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_below="@+id/tnu"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tna"
+            android:id="@+id/src"
+            android:text="Source :"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffff"
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/src"
+            android:id="@+id/des"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffff"
+            android:text="Destination :"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/des"
+        android:text="Position :" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+</RelativeLayout>

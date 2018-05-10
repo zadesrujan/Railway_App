@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sandtoblue"
+    tools:context="com.example.user.major_project.Fragments.TrainFareFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+<android.support.design.widget.TextInputLayout
+    android:layout_width="wrap_content"
+    android:id="@+id/ti"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/train_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Train Number"
+        android:inputType="textPersonName" />
+
+</android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/ti1"
+        android:layout_below="@+id/ti"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/Source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:hint="Source station code."
+            android:inputType="textPersonName" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/ti1"
+        android:id="@+id/ti2"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/Destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:hint="Destination station code."
+            android:inputType="textPersonName" />
+
+    </android.support.design.widget.TextInputLayout>
+
+<android.support.design.widget.TextInputLayout
+    android:layout_width="wrap_content"
+    android:id="@+id/ti3"
+    android:layout_below="@+id/ti2"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="textPersonName" />
+
+</android.support.design.widget.TextInputLayout>
+
+
+    <Spinner
+        android:id="@+id/Quota"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/ti3"
+        android:layout_marginTop="25dp" />
+
+    <Spinner
+        android:id="@+id/Class"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Quota"
+        android:layout_marginTop="27dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/ti4"
+        android:layout_below="@+id/Class"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@+id/Class"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:inputType="date"
+            android:hint="Select Date"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ti4"
+        android:id="@+id/image"
+        android:layout_toEndOf="@+id/ti4"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:src="@drawable/date_range"/>
+
+    <Button
+        android:id="@+id/fare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:text="Get Fare"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

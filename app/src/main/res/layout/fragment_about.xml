@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/about"
+    tools:context="com.example.user.major_project.Fragments.AboutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:textStyle="italic"
+        android:text="*Designed and Developed by cHinTvi
+   Version 1.0" />
+
+</RelativeLayout>

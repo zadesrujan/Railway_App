@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/lts"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.major_project.Fragments.LtsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<android.support.design.widget.TextInputLayout
+    android:layout_width="wrap_content"
+    android:id="@+id/tl"
+    android:layout_marginTop="30dp"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Train Number/Name" />
+
+</android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/Show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tl"
+        android:layout_marginTop="38dp"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:textAllCaps="false"
+        android:text="Show Status" />
+
+
+</RelativeLayout>

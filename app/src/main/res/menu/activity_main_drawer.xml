@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/tarin_number"
+            android:icon="@drawable/trainnumber"
+            android:title="Train Name/Number"
+            />
+        <item
+            android:id="@+id/train_status"
+            android:icon="@drawable/trainnumber"
+            android:title="Live Train Status" />
+        <item
+            android:id="@+id/fare"
+            android:icon="@drawable/fare"
+            android:title="Train Fare Enquiry"/>
+        <item
+            android:id="@+id/name_code"
+            android:icon="@drawable/ctn"
+            android:title="Station Name to Code"/>
+        <item
+            android:id="@+id/code_name"
+            android:icon="@drawable/ctn"
+            android:title="Station Code to Name"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/abt"
+                android:title="About" />
+        </menu>
+    </item>
+
+</menu>

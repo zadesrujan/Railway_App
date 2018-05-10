@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/relay"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.major_project.Fragments.CodeToNameFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<android.support.design.widget.TextInputLayout
+    android:layout_width="wrap_content"
+    android:id="@+id/txt"
+    android:layout_marginTop="30dp"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/stcde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:hint="Enter Station Code"
+        android:inputType="textPersonName" />
+
+</android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_below="@+id/txt"
+        android:layout_centerHorizontal="true"
+        android:text="Submit" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:id="@+id/c2n"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit"
+        android:layout_centerHorizontal="true">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
